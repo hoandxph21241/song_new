@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload MP3</title>
+</head>
+<body>
+  <h1>Upload MP3</h1>
+  <form action="/mp3/upload" method="post" enctype="multipart/form-data">
+    <label for="mp3Name">Name:</label>
+    <input type="text" id="mp3Name" name="name">
+    <br><br>
+    <label for="mp3File">Select MP3 file:</label>
+    <input type="file" id="mp3File" name="mp3File" accept=".mp3" required>
+    <br><br>
+    <input type="submit" value="Upload">
+  </form>
+</body>
+</html>
